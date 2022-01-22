@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container pt-5">
+        <h1 class="text-info text-capitalize text-center">To do list</h1>
+        <!-- search bar -->
+        <div class="input-group shadow-lg my-3 search-form">
+            <input type="text" class="form-control serach-input" placeholder=""
+                aria-label="Example text with button addon" aria-describedby="button-addon1">
+            <button class="btn btn-dark fs-3 fw-bolder search-btn" type="button" id="button-addon1">Search</button>
+        </div>
+        <!-- end of search bar -->
+
+        <div class="list container rounded-3 shadow-lg py-5">
+            <h1 class="text-center text-dark ">My To-Dos</h1>
+            <!-- list -->
+            <div class="row p-2 g-2" id="to-do-list">
+                <div class="rounded-3 shadow p-2">
+                    <span class="fs-4 text-secondary">My First Task</span>
+                    <button id="delete-btn" class="btn btn-danger float-end">Delete<i class="fas fa-trash mx-1"></i></button>
+                </div>
+            </div>
+        </div>
+        <!-- end of list -->
+
+        <!-- add -->
+        <div class="input-group shadow-lg my-3 add-form">
+            <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon"
+                aria-describedby="button-addon1">
+            <button class="btn btn-outline-info fs-5 fw-bolder add-btn" type="button" id="button-addon1">ADD</button>
+        </div>
+
+    </div>
+
+
+    <script src="js/script.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
