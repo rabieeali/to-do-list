@@ -5,43 +5,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Your Lovely To Do App!</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-    <div class="container pt-5">
-        <h1 class="text-info text-capitalize text-center">To do list</h1>
-        <!-- search bar -->
-        <div class="input-group shadow-lg my-3 search-form">
-            <input type="text" class="form-control serach-input" placeholder=""
-                aria-label="Example text with button addon" aria-describedby="button-addon1">
-            <button class="btn btn-dark fs-3 fw-bolder search-btn" type="button" id="button-addon1">Search</button>
-        </div>
-        <!-- end of search bar -->
+<body class="container">
+    <main class="pb-5">
+        <h1 class="text-info text-capitalize text-center my-5">To do list</h1>
 
-        <div class="list container rounded-3 shadow-lg py-5">
-            <h1 class="text-center text-dark ">My To-Dos</h1>
-            <!-- list -->
+        <!-- list -->
+        <div class="list container rounded-3 shadow-lg py-3">
+            <h4 class="text-center text-warning">My To-Dos</h4>
             <div class="row p-2 g-2" id="to-do-list">
                 <div class="rounded-3 shadow p-2">
-                    <span class="fs-4 text-secondary">My First Task</span>
-                    <button id="delete-btn" class="btn btn-danger float-end">Delete<i class="fas fa-trash mx-1"></i></button>
+                    <span class="fs-6 text-secondary title">Make Sure To Smile Cutepie! <i
+                            class="fas fa-heart text-danger"></i></span>
+                    <button id="delete-btn" class="btn btn-outline-danger float-end"><i
+                            class="fas fa-trash mx-1"></i></button>
                 </div>
             </div>
         </div>
         <!-- end of list -->
 
         <!-- add -->
-        <div class="input-group shadow-lg my-3 add-form">
-            <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon"
-                aria-describedby="button-addon1">
-            <button class="btn btn-outline-info fs-5 fw-bolder add-btn" type="button" id="button-addon1">ADD</button>
+        <div class="input-group shadow-lg my-3 add-form ">
+            <input type="text" class="form-control shadow-lg bg-blur" placeholder=""
+                aria-label="Example text with button addon" aria-describedby="button-addon1">
+            <button class="btn btn-success fs-5 fw-bolder add-btn" type="button" id="button-addon1"><i
+                    class="fas fa-plus"></i></button>
         </div>
 
-    </div>
+    </main>
 
 
     <script src="js/script.js"></script>

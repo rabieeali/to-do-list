@@ -1,5 +1,4 @@
 let list = document.querySelector("#to-do-list");
-let searchInput = document.querySelector(".search-form input");
 let addInput = document.querySelector(".add-form input");
 let addBtn = document.querySelector(".add-form button");
 
@@ -8,11 +7,11 @@ list.addEventListener("click", (e) => {
     e.target.parentNode.remove();
     if (list.children.length === 0) {
       let listEmptyMsg = document.createElement("div");
-      listEmptyMsg.innerText = "You Have No To-Dos!"
+      listEmptyMsg.innerText = "You Have No To-Dos!";
       listEmptyMsg.classList.add(
         "text-danger",
         "fw-bold",
-        "fs-4",
+        "fs-6",
         "text-capitalize",
         "text-center"
       );
@@ -30,7 +29,7 @@ addBtn.addEventListener("click", (e) => {
     document.querySelector("#emptyMsg").remove();
   }
   list.append(createListItem(addInput.value));
-  addInput.value = ""
+  addInput.value = "";
 });
 
 function createListItem(itemValue) {
@@ -39,16 +38,19 @@ function createListItem(itemValue) {
   let title = document.createElement("span");
   let btn = document.createElement("button");
 
-  item.appendChild(title);
-  item.appendChild(btn);
+  let icon = document.createElement("i");
 
-  item.classList.add("rounded-3", "shadow", "p-2" ,"my-3");
+  item.append(title, btn);
 
-  title.classList.add("fs-4", "text-secondary" ,"text-capitalize");
+  item.classList.add("rounded-3", "shadow", "p-2", "my-3");
+
+  title.className = "title";
+  title.classList.add("fs-6", "text-dark", "text-capitalize");
   title.innerText = itemValue;
 
-  btn.classList.add("btn", "btn-danger", "float-end");
-  btn.innerText = "Delete";
+  btn.classList.add("btn", "btn-outline-danger", "float-end");
   btn.id = "delete-btn";
+  btn.appendChild(icon);
+  icon.classList.add("fas", "fa-trash", "mx-1");
   return item;
 }

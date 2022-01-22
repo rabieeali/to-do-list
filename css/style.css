@@ -1,0 +1,13 @@
+.container {
+  background-color: #85ffbd;
+  background-image: linear-gradient(90deg, #85ffbd 0%, #fffb7d 80%);
+}
+.bg-blur,
+.bg-blur:focus {
+  background: rgba(255, 255, 255, 0.74);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4.5px);
+  -webkit-backdrop-filter: blur(4.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
